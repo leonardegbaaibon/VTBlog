@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: rgb(40, 44, 52) ;
 }
 
 .App-logo {
@@ -36,3 +37,244 @@
     transform: rotate(360deg);
   }
 }
+.sign-logo{
+  display: flex;
+}
+.sign-logo div img{
+  width: 10%;
+  float: left;
+}
+.sign-logo div{
+  flex: 80;;
+  
+}
+.sign-logo button{
+  flex: 10;
+  height: 10%;
+  margin-top: 1%;
+  margin: 1%;
+  background-color: rgb(58, 57, 57); /* For browsers that do not support gradients */
+  background-image: linear-gradient(180deg, rgb(73, 73, 73), rgb(223, 223, 219));
+}
+.triangle,.triangle2{
+	display: flex;
+}
+.triangle-up1 {
+    position:relative;
+	border-left: 80px solid slateblue;
+	border-bottom: 90px solid transparent;
+    animation: mymove1 6s infinite;
+
+    }
+    
+    @keyframes mymove1{
+    	100% {transform: rotate(-180deg);}
+    }
+.triangle-up2 {
+    position:relative;
+	border-right: 80px solid tomato;
+	border-bottom: 90px solid transparent;
+    animation: mymove2 6s infinite ;
+ 
+    }
+    
+    @keyframes mymove2{
+    	100% {transform: rotate(180deg);}
+    }
+.triangle-up3 {
+    position:relative;
+	border-left: 80px solid violet;
+	border-top: 90px solid transparent;
+    animation: mymove3 6s infinite;
+
+    }
+    
+    @keyframes mymove3{
+    	100% {transform: rotate(180deg);}
+    }
+.triangle-up4 {
+    position:relative;
+	border-right: 80px solid mediumseagreen;
+	border-top: 90px solid transparent;
+    animation: mymove4 6s infinite ;
+
+    }
+    
+    @keyframes mymove4{
+    	100% {transform: rotate(-180deg);}
+    }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+  }
+  .container1 button{
+    float: left;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    position: relative;
+  }
+  
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  .container {
+    padding: 16px;
+    display: grid;
+  }
+  .container input{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.315);
+  }
+  .container label b{
+    float: left;
+    color: rgb(248, 241, 241);
+  }
+  .container label input{
+    float: left;
+    margin-top: 1%;
+  }
+  .container label h5{
+    float: left;
+    margin: 0%;
+    color: rgb(245, 237, 237);
+  }
+  .container1{
+    display: flex;
+    padding: 16px;
+  }
+  .container1 button{
+    background-color: tomato;
+    flex: 30;
+  }
+  .container1 span{
+    flex: 50;
+  }
+  
+  span.psw {
+    color: rgb(247, 244, 244);
+    float: right;
+    font-size: 75%;
+    padding-top: 16px;
+
+  }
+  span.psw a{
+    color: rgb(39, 126, 240);
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-image:url(./Mountain2.png) ;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  .modal-content1 {
+    background-color: rgb(49, 48, 48);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: rgb(235, 224, 224);
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
