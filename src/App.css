@@ -41,7 +41,7 @@
   display: flex;
 }
 .sign-logo div img{
-  width: 10%;
+  width: 15%;
   float: left;
 }
 .sign-logo div{
@@ -113,6 +113,11 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
+   ::placeholder {
+    color: rgb(216, 215, 215);
+    opacity: 1; /* Firefox */
+  }
+  
   
   /* Set a style for all buttons */
   button {
@@ -224,7 +229,7 @@
   
   /* Modal Content/Box */
   .modal-content {
-    background-image:url(./Mountain2.png) ;
+    background-image:url(./Image/Mountain2.png);
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
@@ -278,3 +283,14 @@
        width: 100%;
     }
   }
+
+/* 
+  .nav-bar{
+    display: flex;
+    color: black;
+    justify-content:space-around;
+    background-color: aliceblue;
+  }
+  .nav-bar .web-div{
+  }
+   */

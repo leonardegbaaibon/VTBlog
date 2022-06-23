@@ -1,8 +1,5 @@
-import avatar from "./Avatar.png";
+import avatar from "./Image/Avatar2.png";
 
-function show() {
-    document.getElementById('id01').style.display='block';
-  }
   function hide(){
     var modal =   document.getElementById('id01');
     document.getElementById('id01').style.display='none'
