@@ -22,14 +22,11 @@ const Signup = () => {
           <hr />
 
           <div className="container">
-            <label htmlFor="uname" for="uname"><b>Email</b></label>
+          <label htmlFor="uname" for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter your username" name="uname" required />
+
+            <label htmlFor="uname" for="email"><b>Email</b></label>
             <input type="text" placeholder="Enter your email" name="uname" required />
-
-            <label htmlFor="psw" for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required />
-
-            <label htmlFor="psw" for="psw"><b>Repeat password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required />
 
             <button type="submit">Sign up</button>
             <label>

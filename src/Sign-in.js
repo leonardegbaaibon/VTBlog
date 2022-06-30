@@ -21,8 +21,8 @@ const Signin = () => {
               <label htmlFor="uname" for="uname"><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="uname" required />
 
-              <label htmlFor="psw" for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required />
+              <label htmlFor="psw" for="psw"><b>Email</b></label>
+              <input type="password" placeholder="Enter Email" name="psw" required />
 
               <button type="submit">Login</button>
               <label>
@@ -33,7 +33,7 @@ const Signin = () => {
               <button type="button" onClick={hide} >
                 Cancel
               </button>
-              <span className="psw">Forgot <a href="#">Password</a></span>
+              <span className="psw">By creating an account you agree to our<a href="#">Terms and Privacy</a></span>
             </div>
           </form>
         </div>
