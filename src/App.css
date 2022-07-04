@@ -308,8 +308,6 @@ img {
                15px 15px 15px rgba(0,0,0,0.1);
         /* inset -5px -5px 5px rgba(255,255,255,0.2),
         inset 5px 5px 5px rgba(0,0,0,0.1); */
-  
-
   border-radius: 15px;
   padding: 1%;
   /* cursor: pointer; */
@@ -341,7 +339,15 @@ font-family: 'Mukta', sans-serif;
   display: flex;
   font-size: larger;
 }
-
+.middle-body{
+  display: flex;
+}
+.middle-div{
+  flex: 65%;
+}
+.aside-div{
+  flex: 35%;
+}
 .triangle,.triangle2{
 	display: flex;
 }

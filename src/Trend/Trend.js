@@ -57,7 +57,7 @@ const Trend = () => {
       </div>
       <div className="trend-div">
         {test.map((data) => {
-          return (
+          return(
             <div key={data.content} className="trending">
               <div>
                 {data.source.name}

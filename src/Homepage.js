@@ -1,5 +1,7 @@
 import Navbar from "./Navbar/Navbar";
 import Trend from "./Trend/Trend";
+import Middle from "./Middle";
+import Aside from "./Aside";
 import "./App.css";
 
 
@@ -10,7 +12,15 @@ function App() {
       <Navbar />
       <header className="App-header">
         <Trend />
-
+          <hr />
+        <div className="middle-body">
+          <div className="middle-div">
+            <Middle />
+          </div>
+          <div className="aside-div">
+            <Aside />
+          </div>
+        </div>
         
 
         {/* <div class="triangle">
