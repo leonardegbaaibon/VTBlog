@@ -14,7 +14,7 @@ function App() {
         <Trend />
           <hr />
         <div className="middle-body">
-          <div className="middle-div">
+          <div className="middle_div">
             <Middle />
           </div>
           <div className="aside-div">

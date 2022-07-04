@@ -269,6 +269,8 @@ img {
 .icons{
   font-size: 1.7em;
 }
+/* TREND styling */
+
 .trend-div{
   display: flex;
   justify-content: center;
@@ -339,12 +341,54 @@ font-family: 'Mukta', sans-serif;
   display: flex;
   font-size: larger;
 }
+/* MIDDLE styling*/
+
 .middle-body{
   display: flex;
 }
-.middle-div{
+.middle_div{
   flex: 65%;
 }
+.middle-div{
+  display: flex;
+  margin-left: 8%;
+  margin-right: 3%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding: 3%;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+               15px 15px 15px rgba(0,0,0,0.1),
+        inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+.middle-image{
+  margin: 2%;
+  flex: 30%;
+}
+.middle-image img{
+  height: 100%;
+}
+.middle-word{
+  flex: 70%;
+}
+.middle-link{
+  text-decoration: none;
+  color: white;
+  padding: 3%;
+  background-color: rgba(88, 54, 238, 0.534);
+  font-family: 'Roboto Mono', monospace;
+}
+.middle-word div{
+  margin: 3%;
+}
+
+.middle-describe{
+  font-family: 'Lora', serif;
+}
+
+/* ASIDE styling */
+
 .aside-div{
   flex: 35%;
 }

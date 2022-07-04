@@ -47,9 +47,27 @@ const Middle = () => {
             {tester.map((data) =>  {
                 return (
                     <div key={data.content} className="middle">
-                        <div>
-                            {data.source.name}
-                        </div>       
+                        <div className="middle-div">
+                            <div className="middle-word">
+                                <div>
+                                    {data.source.name}
+                                </div>
+                                <b>
+                                    {data.title}
+                                </b>
+                                <div className="middle-describe">
+                                    {data.description}
+                                </div>
+                                <div>
+                                    <a href={data.url} className="middle-link">Read Full story</a>
+                                </div>
+
+                            </div>
+                            <div className="middle-image">
+                                <img src={data.urlToImage} alt="" /> 
+                            </div>
+                        </div>
+
                     </div>
                 );
                 })}

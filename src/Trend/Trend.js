@@ -65,7 +65,7 @@ const Trend = () => {
               <a href={data.url} className="title">{data.title}...</a>
               <div id="describe">{data.description}</div>
               <div>
-                <a href={data.url}>Read more</a>
+                <a href={data.url}>Read Full story</a>
               </div>
               <div className="likers">
                 <div>
