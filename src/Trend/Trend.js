@@ -8,7 +8,7 @@ import axios from "axios";
 
 const Trend = () => {
   const [test, setTest] = useState([]);
-  const [like, setLike] = useState(0)
+  const [likes, setLikes] = useState(5);
   // const [describe, setDescribe] = useState('Yellow');
 
   const num = [1, 2, 3, 4, 5, 6];
@@ -58,7 +58,7 @@ const Trend = () => {
       <div className="trend-div">
         {test.map((data) => {
           return (
-            <div className="trending">
+            <div key={data.content} className="trending">
               <div>
                 {data.source.name}
               </div>
@@ -69,8 +69,9 @@ const Trend = () => {
               </div>
               <div className="likers">
                 <div>
-                  <BiLike onClick={() => setLike(like + 1)} /> {like}
+                  <BiLike />
                 </div>
+                {likes}
                 <div>
                   <BiDislike />
                 </div>

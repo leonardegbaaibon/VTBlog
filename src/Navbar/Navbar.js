@@ -35,7 +35,7 @@ const Navbar = (props) => {
           type="text"
           id="search"
           required
-          placeholder="Search by League...."
+          placeholder="Search News...."
           value={props.items}
           onChange={getSearchItem}
         />
