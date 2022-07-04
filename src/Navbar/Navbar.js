@@ -1,5 +1,11 @@
 import logo from "../Image/Logo3.png";
 import { FaSearch } from "react-icons/fa";
+import { IoMdFootball } from "react-icons/io";
+import { BsBagCheckFill } from "react-icons/bs"
+import { FaCocktail } from "react-icons/fa"
+import { MdOutlinePublishedWithChanges } from "react-icons/md"
+import { FcVideoFile } from "react-icons/fc"
+import { ImHome } from "react-icons/im"
 import { useRef } from "react";
 
 const Navbar = (props) => {
@@ -37,11 +43,20 @@ const Navbar = (props) => {
           <FaSearch />
         </div>
         </div>
-        <div className="registering-div">
-          <button onClick={show}>Sign in</button>
-          <button onClick={show2}>Sign up</button>
-
+        <div className="project-icons">
+          <button><ImHome className="icons" /><span>Home</span></button>
+          <button><IoMdFootball className="icons" /><span>Live & Highlight Match</span></button>
+          <button><BsBagCheckFill className="icons" /><span>Jobs</span></button>
+          <button><FaCocktail className="icons" /><span>Cocktails</span></button>
+          <button><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></button>
+          <button><FcVideoFile className="icons" /><span>Short Videos</span></button>
         </div>
+
+        {/* <div className="registering-div"> */}
+          {/* <button onClick={show}>Sign in</button>
+          <button onClick={show2}>Sign up</button> */}
+
+        {/* </div> */}
       </div>
   );
 };

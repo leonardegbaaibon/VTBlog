@@ -1,6 +1,5 @@
-import Signin from "./Sign-in";
-import Signup from "./Sign-up";
 import Navbar from "./Navbar/Navbar";
+import Trend from "./Trend/Trend";
 import "./App.css";
 
 
@@ -10,6 +9,10 @@ function App() {
     <div className="App">
       <Navbar />
       <header className="App-header">
+        <Trend />
+
+        
+
         {/* <div class="triangle">
           <div class="triangle-up1"></div>
           <div class="triangle-up2"></div>
@@ -19,8 +22,8 @@ function App() {
           <div class="triangle-up4"></div>
         </div>
         <div>VTBlog</div> */}
-        <Signin />
-        <Signup />
+        {/* <Signin /> */}
+        {/* <Signup /> */}
       </header>
     </div>
   );

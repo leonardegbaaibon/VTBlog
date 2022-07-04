@@ -6,6 +6,7 @@
 
 .App {
   background-color: rgb(224, 221, 221);
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -13,13 +14,7 @@
   pointer-events: none;
 }
 
-.App-header {
-  /* min-height: 100vh; */
-  /* display: flex; */
-  font-size: calc(10px + 2vmin);
-  /* color: rgb(49, 48, 48); */
-  flex-wrap: wrap;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -92,8 +87,8 @@ img {
 .search-div{
   background-color: white;
   display: flex;
-  width: 50cm;
-  flex: 50%;
+  /* width: 50cm; */
+  flex: 40%;
   height: 1%;
   margin: 2%;
 
@@ -101,20 +96,26 @@ img {
 }
 #search{
   padding: 3%;
-  /* width: 8%; */
+  width: 8%;
   flex: 85%;
   border: none;
   outline: none;
 }
 #search input[type="text"]:focus{
-  border: 1px solid aliceblue;
+  border: 1px solid rgba(240, 248, 255, 0.637);
+  /* width: 10cm; */
 }
+.sign-logo div:nth-of-type(1) {flex-grow: 1;}
+.sign-logo div:nth-of-type(2) {flex-grow: 1.2;}
+.sign-logo div:nth-of-type(3) {flex-grow: 1.5;}
+
+
 .icon-btn{
   /* flex: 10%; */
   display: flex;
   justify-content: center;
   padding-top: 5%;
-  background-color: rgba(135, 199, 162, 0.404);
+  background-color: rgba(168, 179, 172, 0.404);
   cursor: pointer;
 }
 .icon-btn i{
@@ -145,12 +146,11 @@ img {
 .App-header {
   /* background-color: #282c34; */
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* font-size: calc(10px + 2vmin); */
+  color: Black;
 }
 
 .App-link {
@@ -167,19 +167,23 @@ img {
 }
 .sign-logo{
   display: flex;
-  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  /* height: 3cm; */
+  /* width: 100%; */
   background-color: #282c34;
 }
 .logo-diver{
   flex: 10%;
-  width: 100%;
+  width: 50%;
 }
 /* .logo-div{
   width: 100%;
   height: 100%;
 } */
 .sign-logo div img{
-  width: 40%;
+  width: 48%;
   height: 90%;
   float: left;
 }
@@ -187,9 +191,9 @@ img {
   flex: 80;
 }
 .sign-logo .registering-div button{
-  flex: 10;
+  flex: 10%;
   height: 40%;
-  width: 10%;
+  width: 1%;
   margin-top: 1%;
   margin: 1%;
   background-color: rgb(58, 57, 57); /* For browsers that do not support gradients */
@@ -200,9 +204,144 @@ img {
 }
 .registering-div{
   display: flex;
-  margin: 1.7%;
+  /* margin: 1.7%; */
   flex: 20%;
 }
+.project-icons{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* flex: 50%; */
+}
+.project-icons button{
+  /* background-color: rgba(132, 218, 150, 0.295); */
+  border:  1px solid rgba(255, 255, 255, 0.521);
+  width: 5.1%;
+  margin-top: 2%;
+  border-radius: 7%;
+  /* width: 10cm; */
+  height: 50%;
+  position: relative;
+  display: inline-block;
+  /* border-bottom: 1px dotted rgb(247, 243, 243); */
+}
+.project-icons button:nth-of-type(1) {background-color: rgba(174, 59, 250, 0.295) ;}
+.project-icons button:nth-of-type(2) {background-color: rgba(105, 252, 125, 0.521);}
+.project-icons button:nth-of-type(3) {background-color: rgba(88, 54, 238, 0.295);}
+.project-icons button:nth-of-type(4) {background-color: rgba(206, 212, 121, 0.527);}
+.project-icons button:nth-of-type(5) {background-color: rgba(252, 33, 241, 0.404);}
+.project-icons button:nth-of-type(6) {background-color: rgba(223, 165, 126, 0.473);}
+
+
+.project-icons button span{
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(231, 224, 224);
+  color: rgb(15, 15, 15);
+  text-align: center;
+  border-radius: 6px;
+  padding: 9px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.project-icons button span::backdrop{
+  content: "";
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(244, 248, 245) transparent transparent transparent;
+}
+.project-icons button:hover span{
+  visibility: visible;
+  opacity: 1;
+}
+.icons{
+  font-size: 1.7em;
+}
+.trend-div{
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  flex-wrap: wrap;
+  /* position: absolute; */
+  /* left: 15%; */
+  margin-left: 1%;
+  width: 100%;
+}
+.trender{
+  display: grid;
+  margin-top: 4%;
+}
+.trender .trend-icon{
+  color: rgba(88, 54, 238, 0.534);
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2%;
+  font-size: 20px;
+  font-family: 'Gentium Book Plus', serif;
+  /* position: absolute; */
+  /* left: 10%; */
+}
+.trender .trend-icon div{
+  margin-top: 1%;
+  margin-right: 1%;
+  font-size: larger;
+}
+.trending{
+  width: 30%;
+  margin: 3%;
+  margin-top: 0%;
+  box-shadow: -15px -15px 15px rgba(255,255,255,0.2),
+               15px 15px 15px rgba(0,0,0,0.1);
+        /* inset -5px -5px 5px rgba(255,255,255,0.2),
+        inset 5px 5px 5px rgba(0,0,0,0.1); */
+  
+
+  border-radius: 15px;
+  padding: 1%;
+  /* cursor: pointer; */
+}
+.trending .title{
+font-family: 'Mukta', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+.trending div a{
+  text-decoration: none;
+  color: white;
+  padding: 3%;
+  background-color: rgba(88, 54, 238, 0.534);
+  font-family: 'Roboto Mono', monospace;
+
+}
+.trending #describe{
+  display: none;
+}
+.trending div{
+  margin: 5%;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+.likers{
+  display: flex;
+  font-size: larger;
+}
+
 .triangle,.triangle2{
 	display: flex;
 }
