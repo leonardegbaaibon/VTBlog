@@ -269,6 +269,7 @@ img {
 .icons{
   font-size: 1.7em;
 }
+
 /* TREND styling */
 
 .trend-div{
@@ -388,9 +389,25 @@ font-family: 'Mukta', sans-serif;
 }
 
 /* ASIDE styling */
-
+:root{
+  --clr-neon: hsl(317 100% 54%);
+  --clr-bg: hsl(323 21% 16%);
+}
 .aside-div{
   flex: 35%;
+  background: var(--clr-bg);
+  color: var(--clr-neon);
+}
+.aside-button{
+  color: var(--clr-neon);
+  background-color: var(--clr-bg);
+  font-size: large;
+  display: inline-block;
+  cursor: pointer;
+  border: var(--clr-neon) 0.125em solid;
+  border-radius: 0.25em;
+  padding: 0.25em 1em;
+  
 }
 .triangle,.triangle2{
 	display: flex;
@@ -457,7 +474,7 @@ font-family: 'Mukta', sans-serif;
   
   /* Set a style for all buttons */
   button {
-    background-color: #04AA6D;
+    /* background-color: #04AA6D; */
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -470,7 +487,7 @@ font-family: 'Mukta', sans-serif;
   }
   
   button:hover {
-    opacity: 0.8;
+    /* opacity: 0.8; */
   }
   
   /* Extra styles for the cancel button */
