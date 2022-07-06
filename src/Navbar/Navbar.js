@@ -4,7 +4,7 @@ import { IoMdFootball } from "react-icons/io";
 import { BsBagCheckFill } from "react-icons/bs"
 import { FaCocktail } from "react-icons/fa"
 import { MdOutlinePublishedWithChanges } from "react-icons/md"
-import { FcVideoFile } from "react-icons/fc"
+import { FaRegFileVideo} from "react-icons/fa"
 import { ImHome } from "react-icons/im"
 import { useRef } from "react";
 
@@ -44,12 +44,12 @@ const Navbar = (props) => {
         </div>
         </div>
         <div className="project-icons">
-          <button><ImHome className="icons" /><span>Home</span></button>
-          <button><IoMdFootball className="icons" /><span>Live & Highlight Match</span></button>
-          <button><BsBagCheckFill className="icons" /><span>Jobs</span></button>
-          <button><FaCocktail className="icons" /><span>Cocktails</span></button>
-          <button><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></button>
-          <button><FcVideoFile className="icons" /><span>Short Videos</span></button>
+          <button className="homer"><ImHome className="icons" /><span>Home</span></button>
+          <button  className="gamer"><IoMdFootball className="icons" /><span>Football</span></button>
+          <button  className="jober"><BsBagCheckFill className="icons" /><span>Jobs</span></button>
+          <button className="drinker"><FaCocktail className="icons" /><span>Cocktails</span></button>
+          <button className="publisher"><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></button>
+          <button  className="Videoer"><FaRegFileVideo className="icons" /><span>Short Videos</span></button>
         </div>
 
         {/* <div className="registering-div"> */}

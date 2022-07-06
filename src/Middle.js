@@ -26,7 +26,6 @@ const Middle = () => {
           let num = [];
           for (let i = 0; i < res.data.articles.length; i++) {
             console.log(res.data.articles[i]);
-  
             let man = res.data.articles[i];
             // console.log(i)
             num.push(i);
@@ -59,7 +58,7 @@ const Middle = () => {
                                     {data.description}
                                 </div>
                                 <div>
-                                    <a href={data.url} className="middle-link">Read Full story</a>
+                                    <a href={data.url} className="middlelink"><span>Read Story</span><i></i></a>
                                 </div>
 
                             </div>

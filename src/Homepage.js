@@ -3,10 +3,25 @@ import Trend from "./Trend/Trend";
 import Middle from "./Middle";
 import Aside from "./Aside";
 import "./App.css";
+import { useState } from "react";
 
 
 
 function App() {
+
+  // const [ fix, setFix ] = useState(false);
+
+
+
+  //      function setFixedSide(){
+  //         if(window.scrollY >= 1280 ){
+  //           setFix(true);
+  //         }else{
+  //           setFix(false)
+  //         }
+  //      }
+  //      window.addEventListener('scroll', setFixedSide)
+
   return (
     <div className="App">
       <Navbar />
