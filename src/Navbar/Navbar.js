@@ -10,12 +10,12 @@ import { useRef } from "react";
 
 const Navbar = (props) => {
   //   console.log(props);
-  function show() {
-    document.getElementById("id01").style.display = "block";
-  }
-  function show2() {
-    document.getElementById("id02").style.display = "block";
-  }
+  // function show() {
+  //   document.getElementById("id01").style.display = "block";
+  // }
+  // function show2() {
+  //   document.getElementById("id02").style.display = "block";
+  // }
   const inputEl = useRef("");
 
   const getSearchItem = () => {
