@@ -28,15 +28,15 @@ const Trend = () => {
         let call = [];
         let num = [];
         for (let i = 0; i < 6; i++) {
-          console.log(res.data.articles[i]);
+          // console.log(res.data.articles[i]);
 
           let man = res.data.articles[i];
           // console.log(i)
           num.push(i);
           call.push(res.data.articles[i]);
         }
-        console.log(call);
-        console.log(num);
+        // console.log(call);
+        // console.log(num);
         setTest(call);
         // console.log(num.indexOf(0))
       })

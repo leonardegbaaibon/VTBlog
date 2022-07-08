@@ -9,18 +9,12 @@ import { ImHome } from "react-icons/im"
 import { useRef } from "react";
 
 const Navbar = (props) => {
-  //   console.log(props);
-  // function show() {
-  //   document.getElementById("id01").style.display = "block";
-  // }
-  // function show2() {
-  //   document.getElementById("id02").style.display = "block";
-  // }
+    console.log(props);
   const inputEl = useRef("");
 
   const getSearchItem = () => {
     props.searchKeyword(inputEl.current.value);
-    // console.log(inputEl.current.value)
+    console.log(inputEl.current.value)
   };
   const searchClick = () => {};
 

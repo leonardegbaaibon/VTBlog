@@ -5,10 +5,8 @@ import axios from "axios";
 
 const Middle = () => {
     const [tester, setTester] = useState([]);
-    // const [likes, setLikes] = useState(5);
-    // const [describe, setDescribe] = useState('Yellow');
-  
-    const num = [1, 2, 3, 4, 5, 6];
+
+
     
     const Option = {
       method: "GET",
@@ -25,14 +23,14 @@ const Middle = () => {
           let call = [];
           let num = [];
           for (let i = 0; i < res.data.articles.length; i++) {
-            console.log(res.data.articles[i]);
-            let man = res.data.articles[i];
+            // console.log(res.data.articles[i]);
+            // let man = res.data.articles[i];
             // console.log(i)
             num.push(i);
             call.push(res.data.articles[i]);
           }
-          console.log(call);
-          console.log(num);
+          // console.log(call);
+          // console.log(num);
           setTester(call);
           // console.log(num.indexOf(0))
         })
