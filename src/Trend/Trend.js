@@ -61,10 +61,14 @@ const Trend = () => {
               <div>
                 {data.source.name}
               </div>
-              <a href={data.url} className="title">{data.title}...</a>
+              <div>
+                <a href={data.url} className="title">{data.title.substr(0,100)}...</a>
+              </div>
               <div id="describe">{data.description}</div>
               <div>
                 <a className="trendlink" href={data.url}> <span>Read more</span><i></i></a>
+                <a className="trendlinker" href={data.url}>Read more</a>
+                {/* <span>qwerty</span> */}
               </div>
               <div className="likers">
                 <div>

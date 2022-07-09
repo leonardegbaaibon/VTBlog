@@ -50,13 +50,14 @@ const Middle = () => {
                                     {data.source.name}
                                 </div>
                                 <b>
-                                    {data.title}
+                                    {data.title.substr(0,150)}
                                 </b>
                                 <div className="middle-describe">
                                     {data.description}
                                 </div>
                                 <div>
                                     <a href={data.url} className="middlelink"><span>Read Story</span><i></i></a>
+                                    <a href={data.url} className="middlelinker">Read story</a>
                                 </div>
 
                             </div>

@@ -5,6 +5,7 @@ import Aside from "./Aside";
 import "./App.css";
 import { useState,useEffect } from "react";
 import axios from "axios";
+import Vernavbar from "./Navbar/Ver-navbar";
 
 
 
@@ -71,13 +72,13 @@ function App() {
       searchKeyword={searchHandler}
       searchWarn = {searchResult}
       />
-      <div></div>
+      <Vernavbar />
       {searchResult.length === 0 && searchItem.length > 0 ? <div className="result-warning">No Results found</div>  : console.log()}
       {searchItem.length > 0 ? (
         searchResult.map((data) => {
           return(
             
-            <div className="middle_div">
+            <div className="middle_div2">
               <div className="middle-diver">
                 <div key={data.content} className="middle">
              <div className="middle-div">
@@ -93,6 +94,7 @@ function App() {
                     </div>
                     <div>
                         <a href={data.url} className="middlelink"><span>Read Story</span><i></i></a>
+                        <a href={data.url} className="middlelinker">Read story</a>
                     </div>
 
                 </div>
