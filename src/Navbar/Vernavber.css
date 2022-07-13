@@ -1,0 +1,57 @@
+.vertical-nav {
+    font-family: "Lato", sans-serif;
+    background-color: rgb(216, 214, 212);
+  }
+  
+  .project-icons2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-bg);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+  }
+  
+  .project-icons2 button {
+    /* padding: 8px 8px 8px 32px; */
+    text-decoration: none;
+    width: 25%;
+    /* font-size: 25px; */
+    /* color: #818181; */
+    display: block;
+    transition: 0.3s;
+    margin-left: 20%;
+  }
+  .openav{
+    font-size: 30px;
+    font-weight: 900;
+    cursor: pointer;
+    /* top: 5em; */
+    /* position: absolute; */
+
+  }
+  
+  
+  .project-icons2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  @media screen and (max-width: 1185px){
+    /* .openav{
+        position: fixed;
+        top: 5.5em;
+    } */
+  }

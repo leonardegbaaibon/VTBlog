@@ -72,7 +72,6 @@ function App() {
       searchKeyword={searchHandler}
       searchWarn = {searchResult}
       />
-      <Vernavbar />
       {searchResult.length === 0 && searchItem.length > 0 ? <div className="result-warning">No Results found</div>  : console.log()}
       {searchItem.length > 0 ? (
         searchResult.map((data) => {
@@ -87,7 +86,7 @@ function App() {
                         {data.source.name}
                     </div>
                     <b>
-                        {data.title}
+                    {data.title.substr(0,50)}...
                     </b>
                     <div className="middle-describe">
                         {data.description}

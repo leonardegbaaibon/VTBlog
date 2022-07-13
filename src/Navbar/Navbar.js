@@ -7,6 +7,7 @@ import { MdOutlinePublishedWithChanges } from "react-icons/md"
 import { FaRegFileVideo} from "react-icons/fa"
 import { ImHome } from "react-icons/im"
 import { useRef } from "react";
+import Vernavbar from "./Ver-navbar";
 
 const Navbar = (props) => {
     console.log(props);
@@ -19,6 +20,7 @@ const Navbar = (props) => {
   const searchClick = () => {};
 
   return (
+    <div className="top-nav">
     <div class="sign-logo">
       <div className="logo-diver">
         <img src={logo} alt="" className="logo-div" />
@@ -51,6 +53,9 @@ const Navbar = (props) => {
           <button onClick={show2}>Sign up</button> */}
 
         {/* </div> */}
+        
+      </div>
+         <Vernavbar />
       </div>
   );
 };

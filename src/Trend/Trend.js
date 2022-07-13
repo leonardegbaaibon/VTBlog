@@ -62,7 +62,7 @@ const Trend = () => {
                 {data.source.name}
               </div>
               <div>
-                <a href={data.url} className="title">{data.title.substr(0,100)}...</a>
+                <a href={data.url} className="title">{data.title.substr(0,70)}...</a>
               </div>
               <div id="describe">{data.description}</div>
               <div>
