@@ -72,21 +72,21 @@ function App() {
       searchKeyword={searchHandler}
       searchWarn = {searchResult}
       />
+      <div className="middle-body2">
       {searchResult.length === 0 && searchItem.length > 0 ? <div className="result-warning">No Results found</div>  : console.log()}
       {searchItem.length > 0 ? (
         searchResult.map((data) => {
           return(
-            
             <div className="middle_div2">
               <div className="middle-diver">
-                <div key={data.content} className="middle">
+                <div key={data.url} className="middle">
              <div className="middle-div">
                 <div className="middle-word">
                     <div>
                         {data.source.name}
                     </div>
                     <b>
-                    {data.title.substr(0,50)}...
+                    {data.title.slice(0,20)} ...
                     </b>
                     <div className="middle-describe">
                         {data.description}
@@ -121,6 +121,7 @@ function App() {
          </header>
          )}
 
+         </div>
         
 
          </div>

@@ -43,14 +43,14 @@ const Middle = () => {
         <div className="middle-diver">
             {tester.map((data) =>  {
                 return (
-                    <div key={data.content} className="middle">
+                    <div key={data.url} className="middle">
                         <div className="middle-div">
                             <div className="middle-word">
                                 <div>
                                     {data.source.name}
                                 </div>
                                 <b>
-                                    {data.title.substr(0,50)}...
+                                    {data.title.substr(0,20)} ...
                                 </b>
                                 <div className="middle-describe">
                                     {data.description}
@@ -59,7 +59,6 @@ const Middle = () => {
                                     <a href={data.url} className="middlelink"><span>Read Story</span><i></i></a>
                                     <a href={data.url} className="middlelinker">Read story</a>
                                 </div>
-
                             </div>
                             <div className="middle-image">
                                 <img src={data.urlToImage} alt="" /> 
