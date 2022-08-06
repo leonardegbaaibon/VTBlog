@@ -217,14 +217,12 @@ img {
   justify-content: space-around;
 }
 .project-icons button {
-  width: 5.1%;
+  /* width: 5.1%; */
   margin-top: 2%;
   border-radius: 7%;
   /* width: 10cm; */
-  height: 50%;
-  position: relative;
-  display: inline-block;
-  /* border-bottom: 1px dotted rgb(247, 243, 243); */
+  height: 10cm;
+
 }
 :root {
   --clr-neon: hsl(276, 94%, 55%);
@@ -237,6 +235,7 @@ img {
   --clr-neon2: hsla(251, 84%, 57%, 0.534);
   --clr-neon3: hsl(251, 97%, 64%);
 }
+
 
 .project-icons button:nth-of-type(1) {
   margin-top: 2em;
@@ -1086,7 +1085,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1em;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.0em;
   padding: 7px;
   transition: 0.5s;
   border: 3px solid hsla(251, 84%, 57%, 0.096);
@@ -1172,6 +1171,12 @@ img {
     15px 15px 15px rgba(0, 0, 0, 0.1), inset 3px 3px 5px rgba(0, 0, 0, 0.1),
     inset 3px 3px 5px 5px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
+}
+.result-warning{
+  margin: 70px;
+  color: var(--clr-neon3);
+  font-size: 30px;
+  font-weight: 500
 }
 #navbar {
   margin-top: 3em;
@@ -1459,6 +1464,12 @@ span.psw a {
     border-radius: 5px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   }
+  .middlelinker:hover,
+  .trendlinker:hover {
+    color: white;
+    padding: 8px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
   .middlelink,
   .trendlink {
     /* background-color: var(--clr-neon); */
@@ -1557,6 +1568,9 @@ span.psw a {
     /* top: 5em; */
     /* position: absolute; */
   }
+  .icons{
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 890px) {
   .project-icons {
@@ -1628,5 +1642,9 @@ span.psw a {
     .icon-btn{
       font-size: 10px;
     }
+    .project-icons2 button:nth-of-type(1),.project-icons2 button:nth-of-type(2),.project-icons2 button:nth-of-type(3),.project-icons2 button:nth-of-type(4),.project-icons2 button:nth-of-type(5),.project-icons2 button:nth-of-type(6) {
+      height: 3em;
+    }
+
 }
 

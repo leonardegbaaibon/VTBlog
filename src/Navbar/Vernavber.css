@@ -18,10 +18,9 @@
   
   .project-icons2 button {
     text-decoration: none;
-    width: 23px;
-    height: 10em;
-    /* font-size: 25px; */
-    /* color: #818181; */
+    width: 27px;
+    height: 1%;
+    /* height: 10px; */
     display: block;
     transition: 0.3s;
     margin-left: 48px;

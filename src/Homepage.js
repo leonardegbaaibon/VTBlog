@@ -6,6 +6,7 @@ import "./App.css";
 import { useState,useEffect } from "react";
 import axios from "axios";
 import Vernavbar from "./Navbar/Ver-navbar";
+import Footer from "./Footer/Footer";
 
 
 
@@ -48,9 +49,6 @@ function App() {
           let call = [];
           let num = [];
           for (let i = 0; i < res.data.articles.length; i++) {
-            // console.log(res.data.articles[i]);
-            // let man = res.data.articles[i];
-            // console.log(i)
             num.push(i);
             call.push(res.data.articles[i]);
           }
@@ -122,7 +120,7 @@ function App() {
          )}
 
          </div>
-        
+        <Footer />
 
          </div>
          );

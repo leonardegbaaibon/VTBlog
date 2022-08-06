@@ -50,7 +50,7 @@ const Middle = () => {
                                     {data.source.name}
                                 </div>
                                 <b>
-                                    {data.title.substr(0,20)} ...
+                                    {data.title.substr(0,40)} ...
                                 </b>
                                 <div className="middle-describe">
                                     {data.description}
