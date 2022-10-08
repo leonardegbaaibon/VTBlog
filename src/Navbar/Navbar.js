@@ -1,11 +1,11 @@
 import logo from "../Image/Logo3.png";
 import { FaSearch } from "react-icons/fa";
 import { IoMdFootball } from "react-icons/io";
-import { BsBagCheckFill } from "react-icons/bs"
-import { FaCocktail } from "react-icons/fa"
-import { MdOutlinePublishedWithChanges } from "react-icons/md"
-import { FaRegFileVideo} from "react-icons/fa"
-import { ImHome } from "react-icons/im"
+import { BsBagCheckFill } from "react-icons/bs";
+import { FaCocktail } from "react-icons/fa";
+import { MdOutlinePublishedWithChanges } from "react-icons/md";
+import { FaRegFileVideo} from "react-icons/fa";
+import { ImHome } from "react-icons/im";
 import { useRef } from "react";
 import Vernavbar from "./Ver-navbar";
 
@@ -48,11 +48,6 @@ const Navbar = (props) => {
           <button  className="Videoer"><FaRegFileVideo className="icons" /><span>Short Videos</span></button>
         </div>
 
-        {/* <div className="registering-div"> */}
-          {/* <button onClick={show}>Sign in</button>
-          <button onClick={show2}>Sign up</button> */}
-
-        {/* </div> */}
         
       </div>
          <Vernavbar />
