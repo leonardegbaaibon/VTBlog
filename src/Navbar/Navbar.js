@@ -41,7 +41,7 @@ const Navbar = (props) => {
         </div>
         <div className="project-icons">
           <a className="homer"><ImHome className="icons" /><span>Home</span></a>
-          <a href="" className="gamer"><IoMdFootball className="icons" /><span>Football</span></a>
+          <a href="https://sportify3.vercel.app/" className="gamer"><IoMdFootball className="icons" /><span>Football</span></a>
           <a  className="jober"><BsBagCheckFill className="icons" /><span>Jobs</span></a>
           <a className="drinker"><FaCocktail className="icons" /><span>Cocktails</span></a>
           <a className="publisher"><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></a>
