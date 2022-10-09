@@ -5,7 +5,7 @@ import Aside from "./Aside";
 import "./App.css";
 import { useState,useEffect } from "react";
 import axios from "axios";
-import Vernavbar from "./Navbar/Ver-navbar";
+// import Vernavbar from "./Navbar/Ver-navbar";
 import Footer from "./Footer/Footer";
 
 
@@ -15,9 +15,7 @@ function App() {
   const [searchResult, setSearchResult] = useState([]);
   const [tester, setTester] = useState([]);
 
-  // const getApi = () => {
   const searchHandler = (searchItem) => {
-    // console.log(searchItem)
     setSearchItem(searchItem);
     if (searchItem !== "") {
       const newSet = tester.filter((data) => {
@@ -52,10 +50,7 @@ function App() {
             num.push(i);
             call.push(res.data.articles[i]);
           }
-          // console.log(call);
-          // console.log(num);
           setTester(call);
-          // console.log(num.indexOf(0))
         })
         .catch(function (error) {
           console.error(error);

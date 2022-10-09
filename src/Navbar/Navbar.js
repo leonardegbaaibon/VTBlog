@@ -40,12 +40,12 @@ const Navbar = (props) => {
         </div>
         </div>
         <div className="project-icons">
-          <button className="homer"><ImHome className="icons" /><span>Home</span></button>
-          <button  className="gamer"><IoMdFootball className="icons" /><span>Football</span></button>
-          <button  className="jober"><BsBagCheckFill className="icons" /><span>Jobs</span></button>
-          <button className="drinker"><FaCocktail className="icons" /><span>Cocktails</span></button>
-          <button className="publisher"><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></button>
-          <button  className="Videoer"><FaRegFileVideo className="icons" /><span>Short Videos</span></button>
+          <a className="homer"><ImHome className="icons" /><span>Home</span></a>
+          <a href="" className="gamer"><IoMdFootball className="icons" /><span>Football</span></a>
+          <a  className="jober"><BsBagCheckFill className="icons" /><span>Jobs</span></a>
+          <a className="drinker"><FaCocktail className="icons" /><span>Cocktails</span></a>
+          <a className="publisher"><MdOutlinePublishedWithChanges className="icons" /><span>Publish</span></a>
+          <a  className="Videoer"><FaRegFileVideo className="icons" /><span>Short Videos</span></a>
         </div>
 
         

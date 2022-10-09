@@ -16,7 +16,7 @@
     padding-top: 40px;
   }
   
-  .project-icons2 button {
+  .project-icons2 a {
     text-decoration: none;
     width: 27px;
     height: 1%;
@@ -41,6 +41,8 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: white;
+    cursor: pointer;
   }
   
   @media screen and (max-height: 450px) {
